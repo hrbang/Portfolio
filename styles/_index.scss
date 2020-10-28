@@ -1,0 +1,120 @@
+.jb_frontpage {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+
+    .jb_front__wrapper {
+        height: 100%;
+        position: relative;
+        padding-left: 75px;
+        padding-right: 75px;
+
+        .jb_front__topnav {
+            padding-top: 75px;
+            display: flex;
+            justify-content: space-between;
+
+            &_logo {
+
+                .logo {
+                    font-family: orpheuspro, serif;
+                    font-size: 25px;
+                }
+
+            }
+
+            &_about {
+
+                a {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 18px;
+                    color: #1A1A1A;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+
+            }
+
+        }
+
+        .jb_front__title {
+
+            .title {
+                text-align: center;
+                font-size: 102px;
+                line-height: 1.4;
+                font-weight: 400;
+                color: #1A1A1A;
+
+                span {
+                    display: block;
+                }
+
+            }
+
+        }
+
+        .jb_front__social {
+            bottom: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+
+            ul {
+                margin: 0;
+                padding-left: 0;
+
+                li {
+                    display: inline-block;
+                    padding: 0 25px 0 25px;
+
+                    a {
+                        color: #1A1A1A;
+                        font-family: orpheuspro, serif;
+                        text-decoration: none;
+                        font-size: 30px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .jb_front__botnav_projects {
+
+            position: absolute;
+            bottom: 75px;
+            left: 75px;
+            transform: rotate(-90deg);
+
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                color: #1A1A1A;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+        }
+
+        .jb_front__botnav_reel {
+
+            position: absolute;
+            bottom: 75px;
+            right: 75px;
+            transform: rotate(-90deg);
+
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                color: #1A1A1A;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
+}
