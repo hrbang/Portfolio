@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link';
+import Cursor from '../components/cursor'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         	<link rel="icon" href="/favicon.ico" />
     	</Head>
 
+		<Cursor />
     	<main className="jb_frontpage">
 			<div className="jb_front__wrapper">
 				<div className="jb_front__topnav">
