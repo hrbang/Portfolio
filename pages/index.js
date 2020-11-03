@@ -32,24 +32,27 @@ export class FrontPage extends Component {
 
 	componentDidMount() {
 
-		TM.to(this.lineOne, 1, {
-			yPercent: -100,
-			ease: Power4
+		TM.to(this.lineOne, 1.5, {
+			yPercent: -200,
+			ease: Power4.easeOut,
 		})
 
-		TM.to(this.lineTwo, 1, {
-			yPercent: -100,
-			ease: Power4
+		TM.to(this.lineTwo, 1.5, {
+			yPercent: -200,
+			ease: Power4.easeOut,
+			delay: .15
 		})
 
-		TM.to(this.lineThree, 1, {
-			yPercent: -100,
-			ease: Power4
+		TM.to(this.lineThree, 1.5, {
+			yPercent: -200,
+			ease: Power4.easeOut,
+			delay: .25
 		})
 
-		TM.to(this.lineFour, 1, {
-			yPercent: -100,
-			ease: Power4
+		TM.to(this.lineFour, 1.5, {
+			yPercent: -200,
+			ease: Power4.easeOut,
+			delay: .35
 		})
 
 	}
@@ -71,10 +74,18 @@ export class FrontPage extends Component {
 				</div>
 				<div className="jb_front__title">
 					<h1 className="title">
-						<span ref={div => this.lineOne = div}>Hi!</span>
-						<span ref={div => this.lineTwo = div}>I am Jonas Bang</span>
-						<span ref={div => this.lineThree = div}>an independent creative designer</span>
-						<span ref={div => this.lineFour = div}>based in Denmark.</span>
+						<div className="wrap">
+							<span ref={div => this.lineOne = div}>Hi!</span>
+						</div>
+						<div className="wrap">
+							<span ref={div => this.lineTwo = div}>I am Jonas Bang</span>
+						</div>
+						<div className="wrap">
+							<span ref={div => this.lineThree = div}>an independent creative designer</span>
+						</div>
+						<div className="wrap">
+							<span ref={div => this.lineFour = div}>based in Denmark.</span>
+						</div>
 					</h1>
 				</div>
 				<div className="jb_front__social">

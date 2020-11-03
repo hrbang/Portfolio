@@ -57,14 +57,23 @@
                 margin: 0;
                 position: relative;
                 overflow: hidden;
+                margin-top: 50px;
 
                 @media screen and (min-width: 1600px) {
                     font-size: 102px;
                 }
 
-                span {
-                    display: block;
+                .wrap {
+                    overflow: hidden;
+                    
+                    span {
+                        transform: translate(0%, 200%);
+                        display: block;
+                    }
+
+
                 }
+
 
             }
 
