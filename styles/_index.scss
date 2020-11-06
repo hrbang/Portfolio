@@ -24,10 +24,12 @@
             }
 
             &_logo {
+                overflow: hidden;
 
                 .logo {
                     font-family: orpheuspro, serif;
                     font-size: 25px;
+                    transform: translate(0%, 100%);
                 }
 
             }

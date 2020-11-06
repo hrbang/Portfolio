@@ -28,6 +28,7 @@ export class FrontPage extends Component {
 		this.lineTwo = null;
 		this.lineThree = null;
 		this.lineFour = null;
+		this.logoAnim = null;
 	}
 
 	componentDidMount() {
@@ -40,19 +41,24 @@ export class FrontPage extends Component {
 		TM.to(this.lineTwo, 1.5, {
 			yPercent: -200,
 			ease: Power4.easeOut,
-			delay: .15
+			delay: .25
 		})
 
 		TM.to(this.lineThree, 1.5, {
 			yPercent: -200,
 			ease: Power4.easeOut,
-			delay: .25
+			delay: .35
 		})
 
 		TM.to(this.lineFour, 1.5, {
 			yPercent: -200,
 			ease: Power4.easeOut,
-			delay: .35
+			delay: .45
+		})
+
+		TM.to(this.logoAnim, 1, {
+			yPercent: -100,
+			ease: Power4.easeOut
 		})
 
 	}
@@ -62,7 +68,7 @@ export class FrontPage extends Component {
 			<div className="jb_front__wrapper">
 				<div className="jb_front__topnav">
 					<div className="jb_front__topnav_logo">
-						<p className="logo">
+						<p className="logo" ref={div => this.logoAnim = div}>
 							"Portfolio"
 						</p>
 					</div>
