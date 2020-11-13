@@ -29,7 +29,6 @@
                 .logo {
                     font-family: orpheuspro, serif;
                     font-size: 25px;
-                    transform: translate(0%, 100%);
                 }
 
             }
@@ -50,6 +49,8 @@
 
         .jb_front__title {
 
+            margin-top: 50px;
+
             .title {
                 text-align: center;
                 font-size: 75px;
@@ -59,71 +60,59 @@
                 margin: 0;
                 position: relative;
                 overflow: hidden;
-                margin-top: 50px;
 
                 @media screen and (min-width: 1600px) {
                     font-size: 102px;
                 }
 
-                .wrap {
-                    overflow: hidden;
-                    
-                    span {
-                        transform: translate(0%, 200%);
-                        display: block;
-                    }
-
-
-                }
-
-
             }
 
         }
 
-        .jb_front__social {
-            bottom: 45px;
+        .jb_front__botnav_left {
+            position: absolute;
+            bottom: 105px;
+            left: 41px;
+            transform: rotate(-90deg);
+            
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                color: #1A1A1A;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+        }
+
+        .jb_front__botnav_middle {
+            position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            position: absolute;
+            bottom: 75px;
 
-            @media screen and (min-width: 1600px) {
-                bottom: 75px;
-            }
+            a {
+                font-family: 'Orpheus Pro';
+                font-size: 28px;
+                padding: 0px 65px;
+                color: #1A1A1A;
+                text-decoration: none;
 
-            ul {
-                margin: 0;
-                padding-left: 0;
-
-                li {
-                    display: inline-block;
-                    padding: 0 25px 0 25px;
-
-                    a {
-                        color: #1A1A1A;
-                        font-family: orpheuspro, serif;
-                        text-decoration: none;
-                        font-size: 25px;
-
-                        @media screen and (min-width: 1600px) {
-                            font-size: 30px;
-                        }
-
-                    }
-
+                &:nth-child(2) {
+                    padding: 0px 0px;
                 }
 
             }
 
         }
 
-        /* .jb_front__botnav_projects {
-
+        .jb_front__botnav_right {
             position: absolute;
-            bottom: 75px;
-            left: 75px;
+            right: 41px;
+            bottom: 105px;
+            
             transform: rotate(-90deg);
-
+            
             a {
                 font-family: 'Open Sans', sans-serif;
                 font-size: 18px;
@@ -133,23 +122,6 @@
             }
 
         }
-
-        .jb_front__botnav_reel {
-
-            position: absolute;
-            bottom: 75px;
-            right: 75px;
-            transform: rotate(-90deg);
-
-            a {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 18px;
-                color: #1A1A1A;
-                text-decoration: none;
-                font-weight: 600;
-            }
-
-        } */
 
     }
 
