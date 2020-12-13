@@ -1,124 +1,23 @@
+@import 'components/Projects';
+
 .jb_frontpage {
-    height: 100vh;
     position: relative;
     width: 100%;
 
-    .jb_front__wrapper {
-        height: 100%;
-        position: relative;
-        padding-left: 45px;
-        padding-right: 45px;
+    header {
 
-        @media screen and (min-width: 1600px) {
-            padding-left: 75px;
-            padding-right: 75px;
-        }
+        .headline {
 
-        .jb_front__topnav {
-            padding-top: 45px;
-            display: flex;
-            justify-content: space-between;
+            font-size: 105px;
+            text-align: center;
+            font-weight: 400;
+            line-height: 135px;
 
-            @media screen and (min-width: 1600px) {
-                padding-top: 75px;
-            }
+            .anim-wrap {
 
-            &_logo {
-                overflow: hidden;
-
-                .logo {
-                    font-family: orpheuspro, serif;
-                    font-size: 25px;
-                }
-
-            }
-
-            &_about {
-
-                a {
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 18px;
-                    color: #1A1A1A;
-                    text-decoration: none;
-                    font-weight: 600;
-                }
-
-            }
-
-        }
-
-        .jb_front__title {
-
-            margin-top: 50px;
-
-            .title {
-                text-align: center;
-                font-size: 75px;
-                line-height: 1.4;
-                font-weight: 400;
-                color: #1A1A1A;
-                margin: 0;
                 position: relative;
                 overflow: hidden;
 
-                @media screen and (min-width: 1600px) {
-                    font-size: 102px;
-                }
-
-            }
-
-        }
-
-        .jb_front__botnav_left {
-            position: absolute;
-            bottom: 105px;
-            left: 41px;
-            transform: rotate(-90deg);
-            
-            a {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 18px;
-                color: #1A1A1A;
-                text-decoration: none;
-                font-weight: 600;
-            }
-
-        }
-
-        .jb_front__botnav_middle {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 75px;
-
-            a {
-                font-family: 'Orpheus Pro';
-                font-size: 28px;
-                padding: 0px 65px;
-                color: #1A1A1A;
-                text-decoration: none;
-
-                &:nth-child(2) {
-                    padding: 0px 0px;
-                }
-
-            }
-
-        }
-
-        .jb_front__botnav_right {
-            position: absolute;
-            right: 41px;
-            bottom: 105px;
-            
-            transform: rotate(-90deg);
-            
-            a {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 18px;
-                color: #1A1A1A;
-                text-decoration: none;
-                font-weight: 600;
             }
 
         }

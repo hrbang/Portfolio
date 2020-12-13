@@ -1,0 +1,29 @@
+.footer-component {
+
+    margin-bottom: 75px;
+
+    footer {
+
+        width: 100%;
+        border-top: 1px solid #1A1A1A;
+        border-bottom: 1px solid #1A1A1A;
+
+        .footer-wrap {
+
+            .footer-project-name {
+                color: #1A1A1A;
+                font-family: orpheuspro, serif;
+                font-size: 24px;
+            }
+
+            .footer-copyright {
+                color: #1A1A1A;
+                font-family: orpheuspro, serif;
+                font-size: 24px;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,53 @@
+.project-list {
+    width: 90%;
+    margin: 5vw auto 0 auto;
+
+    .projects {
+        list-style: none;
+        padding-left: 0;
+
+        .project-item {
+            position: relative;
+            
+
+            &-left {
+                margin-right: auto;
+            }
+
+            &-right {
+                margin-left: auto;
+            }
+
+            .project {
+                width: 100%;
+                text-align: center;
+                
+                img {
+
+                }
+
+                .project-title {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+
+                    span {
+                        
+                        color: #fff;
+                        margin: 0;
+                        line-height: 1;
+                        font-weight: 400;
+                        font-size: 150px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
