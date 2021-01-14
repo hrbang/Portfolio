@@ -1,0 +1,46 @@
+@import url("https://use.typekit.net/thi3ent.css");
+
+$body-bg: #F6EEE3;
+
+body {
+
+    position: relative;
+    background-color: $body-bg;
+    margin: 0;
+
+    .background-pattern {
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/Pattern.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .wrapper {
+
+        position: relative;
+        /* padding-top: 52px;
+        padding-bottom: 52px;
+        padding-right: 77px;
+        padding-left: 77px;
+        margin-right: auto;
+        margin-left: auto; */
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .entry-content {
+            font-family: orpheuspro, serif;
+        }
+
+    }
+
+}

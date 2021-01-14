@@ -1,0 +1,8 @@
+// Base Sass
+@import 'base';
+/* @import "~bootstrap/scss/bootstrap"; */
+
+//Components 
+@import '../styles/components/Navigation';
+@import '../styles/components/Projects';
+@import '../styles/components/Socials';

@@ -1,7 +1,8 @@
-import '../styles/styles.scss';
+import '../public/styles/styles.scss';
+import 'swiper/swiper.scss';
 
-function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />
+function Portfolio({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
 
-export default MyApp
+export default Portfolio
