@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "94v4n48w",
+    "dataset": "production"
+  },
   "project": {
     "name": "Sanity-Next-Port"
-  },
-  "api": {
-    "projectId": "bra68bi5",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
