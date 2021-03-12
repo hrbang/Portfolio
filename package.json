@@ -8,17 +8,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-hook/mouse-position": "^4.1.0",
     "@sanity/block-content-to-react": "^2.0.7",
     "bootstrap": "^4.5.3",
     "groq": "^2.1.4",
-    "gsap": "^3.5.1",
-    "next": "10.0.3",
-    "react": "17.0.1",
+    "gsap": "^3.6.0",
+    "lodash": "^4.17.21",
+    "marquee-react-dwyer": "^5.9.90",
+    "next": "^10.0.7",
+    "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
+    "react-cursor-position": "^3.0.3",
     "react-dom": "17.0.1",
+    "react-double-marquee": "^1.1.0",
+    "react-fast-marquee": "^1.1.1",
+    "react-live-clock": "^5.0.16",
+    "react-marquee-slider": "^1.1.2",
     "react-three-fiber": "^5.3.14",
     "sass": "^1.30.0",
+    "styled-components": "^5.2.1",
     "swiper": "^6.4.5",
-    "three": "^0.124.0"
+    "three": "^0.126.1"
   }
 }

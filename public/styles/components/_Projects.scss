@@ -1,86 +1,129 @@
 .projects-wrapper {
-    height: 80vh;
-    position: relative;
+    margin-top: 50px;
 
-    .swiper-container {
-        width: 100%;
-        height: 100%;
+    .projects {
 
-        .swiper-wrapper { 
-            transition-timing-function: cubic-bezier(.8,0,.34,1);
-            /* transition: all 1s ease; */
-        }
+        ul {
+            list-style: none;
+            padding-left: 0;
 
-        .swiper-slide {
-            margin: 0 auto;
-            text-align: center;
-            font-size: 18px;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+            li {
 
-            a {
-                text-decoration: none;
-                color: #000000;
+                position: relative;
 
                 .project {
+                    border-bottom: 1px solid $border-color-dark;
 
-                    position: relative;
-                    width: 90%;
-                    height: 100%;
-                    margin: 0 auto;
-        
-                    .project-image {
-        
+                    &:hover {
+                        .project-inner {
+                            opacity: 0;
+                        }
+
+                        .project-scrolling {
+                            opacity: 1;
+                        }
+
+                        .project-image {
+                            display: block;
+                        }
+
+                    }
+
+
+                    .alignment {
+                        display: inline-block;
+                    }
+
+                    .project-inner {
+                        padding: 44px 0px 0px 0px;
                         position: relative;
                         width: 100%;
-                        height: 100%;
-        
-                        img {
+                        opacity: 1;
+                        transition: opacity 0.1s ease-in-out;
+
+                        .project-title {
+                            width: 60%;
+                            position: relative;
+                            transition: transform 0.2s ease;
+
+                            h2 {
+                                margin: 0;
+                                font-family: 'NeueWorld R', sans-serif;
+                                text-transform: uppercase;
+                                font-size: 192px;
+                                font-weight: 400;
+                                color: $primary-color;
+                                line-height: .85;
+                                letter-spacing: -.025em;
+                            }
+
+                        }
+
+                        .project-date {
+                            width: 40%;
+                            position: relative;
+
+                            p {
+
+                                text-align: right;
+                                font-size: 48px;
+                                font-weight: 400;
+                                color: $primary-color;
+                                opacity: 0.2;
+                                line-height: .5;
+                                transition: opacity 0.2s ease;
+
+                            }
+
+                        }
+
+                    }
+
+                    .project-scrolling {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        opacity: 0;
+                        transition: opacity 0.1s ease-in-out;
+
+                        .project-scroll {
                             width: 100%;
-                            height: 100%;
-                        }
-                    }
-        
-                    .project-info {
-                        padding-top: 26px;
-                        position: relative;
-        
-                        .project-category {
-        
-                            .cat {
-                                font-size: 26px;
-                                color: #F33A3A;
-                                font-family: orpheuspro, serif;
+
+                            .project-scroll-name {
                                 margin: 0;
+                                padding: 44px 0px 0px 0px;
+                                font-family: "NeueWorld R", sans-serif;
+                                text-transform: uppercase;
+                                font-size: 192px;
+                                font-weight: 400;
+                                color: #c2c2c2;
+                                line-height: 0.85;
+                                letter-spacing: -0.025em;
+                                overflow: hidden;
+                                padding-right: 160px;
+
                             }
-        
+
                         }
-        
-                        .project-name {
-        
-                            .name {
-                                font-size: 56px;
-                                margin: 0;
-                                font-family: orpheuspro, serif;
-                                line-height: 1;
-                                
-                            }
-        
-                        }
-        
+
                     }
-        
+
+                    .project-image {
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 10000;
+
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            
+                        }
+
+                    }
+
                 }
 
             }
@@ -88,5 +131,6 @@
         }
 
     }
+
 
 }

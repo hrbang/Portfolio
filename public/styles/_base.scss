@@ -1,46 +1,38 @@
-@import url("https://use.typekit.net/thi3ent.css");
+@font-face {
+    font-family: 'NeueWorld L';
+    src: url(../fonts/NeueWorld-light.woff2) format('woff2');
+    weight: normal;
+}
 
-$body-bg: #F6EEE3;
+@font-face {
+    font-family: 'NeueWorld R';
+    src: url(../fonts/NeueWorld-regular.woff2) format('woff2');
+    weight: normal;
+}
+
+$body-bg: #262525;
+$primary-color: #c2c2c2;
+$border-color-dark: #4C4C4C;
+
 
 body {
 
     position: relative;
     background-color: $body-bg;
     margin: 0;
+    font-family: 'NeueWorld L', sans-serif;
+    font-weight: 400;
 
-    .background-pattern {
-
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-image: url("../images/Pattern.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
+    .container {
+        position: relative;
+        margin-left: 32px;
+        margin-right: 32px;
+        padding-left: -32px;
+        padding-right: -32px;
     }
 
-    .wrapper {
-
-        position: relative;
-        /* padding-top: 52px;
-        padding-bottom: 52px;
-        padding-right: 77px;
-        padding-left: 77px;
-        margin-right: auto;
-        margin-left: auto; */
-
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .entry-content {
-            font-family: orpheuspro, serif;
-        }
-
+    p {
+        margin: 0;
     }
 
 }
