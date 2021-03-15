@@ -12,30 +12,9 @@ function urlFor(source) {
 
 export default function Post({ _id, title = '', slug = '', date = '', mainImage = '', }) {
 
-    /* const [relativeMouse, setRelativeMouse] = useState({ x: 0, y: 0, visible: false });
-
-    let mouse = useMouse();
-    useEffect(() => {
-        requestAnimationFrame(handleProjectImage);
-    }, [mouse])
-
-    const postElement = useRef();
-    const handleProjectImage = () => {
-
-        const offSetCalc = postElement.current.getBoundingClientRect()
-
-        if (offSetCalc.top < mouse.y && mouse.y < offSetCalc.top + offSetCalc.height) {
-            setRelativeMouse({ x: mouse.x, y: mouse.y - offSetCalc.top, visible: true });
-        }
-        else {
-            setRelativeMouse({ x: 0, y: 0, visible: false });
-        }
-
-    } */
-
     return (
-        <li key={_id} /* ref={postElement} */>
-            <Link href="/post/[slug]" as={`/post/${slug.current}`}>
+        <li key={_id}>
+            <Link href="/post/[slug]/" as={`/post/${slug.current}/`}>
                 <a>
                     <div className="project">
                         <div className="project-inner">
@@ -55,15 +34,6 @@ export default function Post({ _id, title = '', slug = '', date = '', mainImage 
                                 </Marquee>
                             </div>
                         </div>
-                        {/* {mainImage && (
-                            <div className="project-image"
-                                style={{
-                                    transform: `translate3d(${relativeMouse.x}px, ${relativeMouse.y}px, 0px)`,
-                                    opacity: relativeMouse.visible ? 1 : 0,
-                                }}>
-                                <img src={urlFor(mainImage).width(350).url()} />
-                            </div>
-                        )} */}
                     </div>
                 </a>
             </Link>

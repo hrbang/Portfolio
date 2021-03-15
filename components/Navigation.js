@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 //Components
 import Clock from './Clock'
@@ -16,7 +17,22 @@ export default class Navigation extends Component {
                     </div>
                 </div>
                 <div className="menu">
-                    <p>Menu</p>
+                    <ul>
+                        <li>
+                            <Link href="/">
+                                <a>
+                                    About
+                                </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <a>
+                                    Contact
+                                </a>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         )

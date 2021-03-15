@@ -8,6 +8,7 @@ import imageUrlBuilder from '@sanity/image-url'
 // Components
 import Navigation from '../components/Navigation'
 import Post from '../components/Post'
+import Colophon from '../components/Colophon'
 
 export function urlFor(source) {
 	return imageUrlBuilder(client).image(source)
@@ -43,6 +44,9 @@ export default function Index(props) {
 							</ul>
 						</div>
 					</section>
+					<footer className="colophon">
+						<Colophon />
+					</footer>
 				</div>
 			</main>
 		</>
